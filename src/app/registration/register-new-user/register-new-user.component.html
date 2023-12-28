@@ -1,0 +1,27 @@
+<div>
+  <app-common-nav></app-common-nav>
+  <div>
+    <h3 class="text-center margin-bottom : 50px">Welcome to ShopSwiftly</h3>
+  </div>
+  <div class="container">
+    <div class="card mt-5">
+      <div class="card-body">
+        <form>
+          <div class="mb-3">
+            <label for="username" class="form-label">User Name</label>
+            <input type="text" class="form-control" name = 'username' id="username" [(ngModel)]="username">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" name = 'useremail' id="exampleInputEmail1" [(ngModel)]="useremail">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control"  name = 'password' id="exampleInputPassword1" [(ngModel)]="password">
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

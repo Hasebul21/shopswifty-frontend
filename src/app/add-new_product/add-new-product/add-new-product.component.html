@@ -1,0 +1,26 @@
+<div>
+  <<app-common-nav></app-common-nav>
+</div>
+<div class="input-groups-container">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Product Title</span>
+    <input type="text" class="form-control" placeholder="Title" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="product.title">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">Product Description</span>
+    <textarea class="form-control" aria-label="With textarea" [(ngModel)]="product.description"></textarea>
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text">Product price</span>
+    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" [(ngModel)]="product.price">
+    <span class="input-group-text">.00</span>
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="basic-addon1">Product image</span>
+    <input type="text" class="form-control" placeholder="Image" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)]="product.image_src">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="addProduct()">Submit</button>
+</div>
